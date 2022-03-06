@@ -1,22 +1,5 @@
-msalConfig = {
-  auth: {
-    clientID: "<client-id>",
-    authority: "https://login.microsoftonline.com/<authority>",
-    redirectUri: "<redirect-uri>",
-  },
-  cache: {
-    cacheLocation: "localStorage" < or > "SessionStorage",
-  },
-};
+https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps
+https://techcommunity.microsoft.com/t5/itops-talk-blog/powershell-basics-how-to-check-if-mfa-is-enabled-in-azure-and/ba-p/1486045
+https://docs.microsoft.com/en-us/powershell/module/azuread/get-azureaduser?view=azureadps-2.0
 
-var request = {
-  scopes: ["user.read"],
-};
-var msalObject = new Msal.UserAgentApplication(msalConfig);
-
-//Login in interactively
-
-var response = await msalObject.loginPopup(request);
-
-// acquire a token interactively
-var response = await msalObject.acquireTokenSilent(request);
+https://www.geeksforgeeks.org/http-headers-content-type/

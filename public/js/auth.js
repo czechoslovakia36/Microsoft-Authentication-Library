@@ -15,4 +15,8 @@ async function run() {
 
   let loginResponse = await client.loginPopup(request);
   console.dir(loginResponse);
+
+  let tokenResponse = await client.acquireTokenSilent(request);
+
+  console.dir(tokenResponse);
 }
